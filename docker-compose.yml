@@ -1,0 +1,9 @@
+version: '3'
+services:
+  drupal:
+    image: drupal:debug
+    container_name: "drupal"
+    ports:
+      - "8088:80"
+    volumes:
+      - ./code:/code
